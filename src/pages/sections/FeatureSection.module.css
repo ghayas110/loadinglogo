@@ -1,0 +1,31 @@
+.featureSection {
+    background-color: #000; /* Adjust the background color */
+    padding: 20px;
+  }
+  
+  .iconSlider {
+    display: flex;
+    overflow: hidden; /* Hide scrollbar */
+    scroll-behavior: smooth;
+    margin-bottom: 20px;
+  }
+  
+  .iconSlide {
+    flex: 0 0 auto;
+    margin-right: 15px;
+  }
+  
+  .iconSlide img {
+    height: 50px; /* Adjust the height of the icons */
+  }
+  
+  .videoContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .videoContainer video {
+    width: 800px; /* Set the desired width */
+    height: 450px; /* Set the desired height */
+  }
+  
