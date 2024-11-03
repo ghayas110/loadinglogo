@@ -31,7 +31,7 @@ const ImageSliderSection = () => {
 
   return (
     <section className="py-16 bg-black">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
         
         {/* Left: Image Sliders */}
         <div className="flex items-center justify-center flex-col gap-8">

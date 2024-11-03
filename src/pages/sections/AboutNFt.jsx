@@ -19,7 +19,7 @@ const EmpowerSection = () => {
        <div className="flex align-middle justify-center pt-10">
 
   
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-sm:p-7 ">
 
   {projects.map((project, index) => (
     <div 

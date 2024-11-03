@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section style={{ backgroundColor: '#FFECF3' } } >
-      <div className="container mx-auto px-4 grid md:grid-cols-2 items-center gap-8">
+      <div className="container mx-auto px-4 grid md:grid-cols-2 items-center gap-8 max-sm:py-28">
         
         {/* Left Column: Text Content */}
         <div>

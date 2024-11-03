@@ -62,7 +62,7 @@ const ClientSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
           {clients.map((client, index) => (
-            <div key={index} className="flex items-start space-x-4">
+            <div key={index} className="flex items-start p-7 space-x-4">
               <div>
               <Image src={client.logoSrc} alt={client.name} className="w-20 h-12 object-contain" width={100} height={100} />
                 <h3 className="text-xl font-semibold text-white">{client.name}</h3>

@@ -36,8 +36,8 @@ const ProjectSection = () => {
         {projects.map((project, index) => (
           <div 
             key={index} 
-            className={`relative text-left transform transition-transform duration-500 ${
-              index % 2 === 0 ? 'md:translate-y-0' : 'md:-translate-y-16'
+            className={`relative text-left transform transition-transform duration-500 max-sm:translate-y-0 p-7 ${
+              index % 2 === 0 ? 'md:translate-y-0' : 'md:-translate-y-16' 
             }`}
           >
             <Image
