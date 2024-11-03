@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { logo } from "@/assets";
 import { navLinks } from "@/constant";
@@ -16,29 +17,29 @@ const Header = () => {
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
-        <a href="/">
+        <Link href="/">
           <Image
             src={logo}
             alt="logo"
-            width={500}
-            height={500}
-            className="m-0 w-[129px] h-[59px]"
+            width={129}
+            height={59}
+            className="m-0"
           />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
           <ul className="flex-1 flex justify-center items-center gap-16">
             {navLinks?.map((item) => (
               <li key={item.label}>
-                <a
+                <Link
                   href={item.href}
                   className={`font-montserrat leading-normal text-lg ${
-                    router.pathname === item.href ? "text-black" : "text-white"
+                    router.pathname === item.href ? "text-pink-500" : "text-white"
                   }`}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -47,7 +48,7 @@ const Header = () => {
           <RotatingPlayIcon />
 
           {/* Get Started Button */}
-          <div style={{ marginLeft: 50 }}>
+          <div className="ml-12">
             <button
               className="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-full"
               onClick={() => router.push("/contact")}
@@ -59,7 +60,11 @@ const Header = () => {
 
         {/* Hamburger Icon for smaller screens */}
         <div className="hidden max-lg:block">
-          <button onClick={toggleMobileMenu} aria-label="Toggle mobile menu">
+          <button
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+            aria-expanded={isMobileMenuOpen}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -84,12 +89,12 @@ const Header = () => {
           <ul className="text-center space-y-6">
             {navLinks?.map((item) => (
               <li key={item.label} onClick={() => setIsMobileMenuOpen(false)}>
-                <a
+                <Link
                   href={item.href}
                   className="text-lg font-montserrat leading-normal"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
