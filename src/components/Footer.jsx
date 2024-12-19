@@ -1,32 +1,30 @@
 import React from 'react';
 import { FaInstagram, FaDribbble, FaLinkedin, FaRegCircle } from 'react-icons/fa'; // Example social icons
 import { logo } from "@/assets";
-
 import Image from "next/image";
+
 const Footer = () => {
   return (
-    <footer className="bg-black py-12">
+    <footer className="bg-white dark:bg-black text-black dark:text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-12 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-12 lg:space-y-0 lg:space-x-12">
           
           {/* Left Section: Logo and Tagline */}
-          <div className="lg:w-1/4">
-            <div className="flex items-center space-x-2">
+          <div className="w-full lg:w-1/4 text-center lg:text-left">
             <Image
-            src={logo}
-            alt='logo'
-            width={500}
-            height={500}
-            className='m-0 w-[129px] h-[59px]'
-          />
-            </div>
-            <p className="text-gray-400 mt-2">Creating everlasting impressions.</p>
+              src={logo}
+              alt="logo"
+              width={129}
+              height={59}
+              className="m-0 mx-auto lg:mx-0"
+            />
+            <p className="text-gray-400 mt-4">Creating everlasting impressions.</p>
           </div>
 
           {/* Center Sections: Links */}
-          <div className="flex space-x-12 lg:space-x-16">
+          <div className="flex flex-col sm:flex-row justify-between w-full lg:w-auto space-y-8 sm:space-y-0 sm:space-x-12">
             {/* Company Links */}
-            <div>
+            <div className="text-center sm:text-left">
               <h4 className="text-white font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white">Home</a></li>
@@ -38,7 +36,7 @@ const Footer = () => {
             </div>
 
             {/* Case Studies */}
-            <div>
+            <div className="text-center sm:text-left">
               <h4 className="text-white font-semibold mb-4">Case Studies</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white">Pillar</a></li>
@@ -47,18 +45,25 @@ const Footer = () => {
                 <li><a href="#" className="hover:text-white">Sola</a></li>
                 <li><a href="#" className="hover:text-white">Summit</a></li>
                 <li><a href="#" className="hover:text-white">[P]rehab</a></li>
-                <li><a href="#" className="hover:text-white">Column Tax</a></li>
-                <li><a href="#" className="hover:text-white">Copy.ai</a></li>
-                <li><a href="#" className="hover:text-white">Nabis</a></li>
-                <li><a href="#" className="hover:text-white">Relay</a></li>
+              </ul>
+            </div>
+            <div className="text-center sm:text-left">
+              <h4 className="text-white font-semibold mb-4">Case Studies</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white">Pillar</a></li>
+                <li><a href="#" className="hover:text-white">Roboflow</a></li>
+                <li><a href="#" className="hover:text-white">NFT.com</a></li>
+                <li><a href="#" className="hover:text-white">Sola</a></li>
+                <li><a href="#" className="hover:text-white">Summit</a></li>
+                <li><a href="#" className="hover:text-white">[P]rehab</a></li>
               </ul>
             </div>
           </div>
 
           {/* Right Section: Social Icons */}
-          <div>
+          <div className="w-full lg:w-auto text-center">
             <h4 className="text-white font-semibold mb-4">Follow Us</h4>
-            <div className="flex space-x-4 text-gray-400">
+            <div className="flex justify-center space-x-4 text-gray-400">
               <a href="#" className="hover:text-white"><FaInstagram className="w-5 h-5" /></a>
               <a href="#" className="hover:text-white"><FaDribbble className="w-5 h-5" /></a>
               <a href="#" className="hover:text-white"><FaRegCircle className="w-5 h-5" /></a>

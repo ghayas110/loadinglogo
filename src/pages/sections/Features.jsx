@@ -22,7 +22,7 @@ const FeatureSection = () => {
   }, []);
 
   return (
-    <div className={styles.featureSection}>
+    <div className="bg-white dark:bg-black">
       <div className={styles.iconSlider} styles={{ overflow: 'hidden' }} ref={sliderRef}>
         <div className={styles.iconSlide}><img src="/images/image1.png" alt="Icon 1" /></div>
         <div className={styles.iconSlide}><img src="/images/image2.png" alt="Icon 2" /></div>

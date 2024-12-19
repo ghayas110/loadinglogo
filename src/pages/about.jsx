@@ -10,7 +10,7 @@ const About = () => {
     return (
         <div>
             <AboutHeroSection/>
-            <LogosSection/>
+            {/* <LogosSection/> */}
             <EmpowerSection/>
             <ValuesSection/>
             <TestimonialSection/>

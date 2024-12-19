@@ -47,27 +47,22 @@ const posts = [
 
 const InsightsSection = () => {
   return (
-    <section style={{ paddingTop: 200 }}  className="bg-black text-white py-16">
+    <section style={{ paddingTop: 200 }}  className="bg-white dark:bg-black text-black dark:text-white py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold mb-12 text-center">Insights</h2>
+        <h2 className="text-5xl font-bold mb-12 text-center text-black dark:text-white">Insights</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {posts.map((post, index) => (
-            <div key={index} className="bg-black p-6 rounded-lg shadow-lg">
+            <div key={index} className="bg-white dark:bg-black p-6 rounded-lg shadow-lg">
               <img
                 src={post.imageSrc}
                 alt={post.title}
                 className="w-full h-64 object-cover rounded-md mb-4"
               />
-              <div className="text-gray-400 text-sm mb-2">{post.date}</div>
+              <div className="text-black dark:text-white text-sm mb-2">{post.date}</div>
               <h3 className="text-2xl font-semibold mb-4">{post.title}</h3>
-              <p className="text-gray-300 mb-6">{post.description}</p>
-              <a
-                href={post.link}
-                className="text-pink-500 font-semibold inline-block"
-              >
-                Read More →
-              </a>
+              <p className="text-black dark:text-white mb-6">{post.description}</p>
+           
             </div>
           ))}
         </div>

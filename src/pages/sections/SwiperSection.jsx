@@ -31,7 +31,7 @@ const PostCarousel = () => {
   return (
     <section className="py-16 text-center">
       {/* Carousel Heading */}
-      <h2 className="text-4xl font-bold text-white mb-8 p-3">
+      <h2 className="text-4xl font-bold text-black dark:text-white mb-8 p-3">
         Insights, Updates, and News from <span className="text-pink-500">Loading Logo</span>
       </h2>
       
@@ -59,8 +59,8 @@ const PostCarousel = () => {
           <SwiperSlide key={index}>
             <div className="text-left p-7">
               <img src={post.imageSrc} alt={post.title} className="w-full h-auto mb-4 rounded-lg" />
-              <h3 className="text-xl font-semibold text-white mb-2">{post.title}</h3>
-              <p className="text-white">{post.description}</p>
+              <h3 className="text-xl font-semibold text-black dark:text-white mb-2">{post.title}</h3>
+              <p className="text-black dark:text-white">{post.description}</p>
             </div>
           </SwiperSlide>
         ))}

@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="custom-cursor">
       <Hero />
-    <Features/>
+    {/* <Features/> */}
     <ProjectSection/>
     <PostCarousel/>
     <ClientSection/>

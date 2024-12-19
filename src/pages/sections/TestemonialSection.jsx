@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const TestimonialSection = () => {
   return (
-    <section className="bg-black py-16">
+    <section className="bg-white dark:bg-black py-16">
       <div className="container mx-auto px-4">
         {/* Testimonial Card */}
         <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center max-w-4xl mx-auto">

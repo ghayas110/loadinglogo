@@ -15,7 +15,7 @@ const EmpowerSection = () => {
      
       ];
   return (
-    <section className="bg-black py-16">
+    <section className="bg-white dark:bg-black py-16">
        <div className="flex align-middle justify-center pt-10">
 
   

@@ -56,16 +56,16 @@ const clients = [
 
 const ClientSection = () => {
   return (
-    <section className="py-16 bg-black">
+    <section className="py-16 bg-white dark:bg-black ">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white mb-12">Our clients both small and large</h2>
+        <h2 className="text-4xl font-bold text-black dark:text-white mb-12">Our clients both small and large</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
           {clients.map((client, index) => (
             <div key={index} className="flex items-start p-7 space-x-4">
               <div>
               <Image src={client.logoSrc} alt={client.name} className="w-20 h-12 object-contain" width={100} height={100} />
-                <h3 className="text-xl font-semibold text-white">{client.name}</h3>
+                <h3 className="text-xl font-semibold text-black dark:text-white">{client.name}</h3>
                 <p className="text-gray-400">{client.description}</p>
               </div>
             </div>

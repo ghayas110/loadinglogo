@@ -15,7 +15,7 @@ const brands = [
 
 const BrandingSection = () => {
   return (
-    <section className="bg-black text-white py-16 px-10">
+    <section className="bg-white dark:bg-black text-black dark:text-white py-16 px-10">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0">
         {/* Left Content */}
         <div className="lg:w-1/2">

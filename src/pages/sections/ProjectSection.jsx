@@ -26,8 +26,8 @@ const projects = [
 
 const ProjectSection = () => {
   return (
-    <section className="py-16 bg-black text-center">
-      <h2 className="text-3xl font-bold text-white mb-20">Our Projects</h2>
+    <section className="py-16 bg-white dark:bg-black text-center">
+    <h2 className="text-5xl font-bold mb-12 text-center text-black dark:text-white">Projects</h2>
       <div className="flex align-middle justify-center pt-10">
 
   
@@ -47,7 +47,7 @@ const ProjectSection = () => {
               width={500}
               height={500}
             />
-            <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+            <h3 className="text-xl font-semibold text-black dark:text-white mb-2">{project.title}</h3>
             <p className="text-gray-400">{project.description}</p>
           </div>
         ))}

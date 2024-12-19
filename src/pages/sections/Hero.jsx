@@ -55,8 +55,8 @@ const Hero = () => {
     </div>
 
     <div className='relative flex-1 flex justify-center items-center  ml-20 max-sm:hidden max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
-    <video width="320" height="240" controls autoPlay muted className=' sm:hidden  md:hidden xl:flex'>
-      <source src="/n.mp4" type="video/mp4" />
+    <video width="740" height="740" controls autoPlay muted className=' sm:hidden  md:hidden xl:flex'>
+      <source src="https://eatcaviar.co/wp-content/uploads/2023/07/Short-Featured-Video.mp4" type="video/mp4" />
      
  
     </video>

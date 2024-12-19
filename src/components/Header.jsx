@@ -32,11 +32,16 @@ const Header = () => {
           <ul className="flex-1 flex justify-center items-center gap-16">
             {navLinks?.map((item) => (
               <li key={item.label}>
+
                 <Link
                   href={item.href}
                   className={`font-montserrat leading-normal text-lg ${
-                    router.pathname === item.href ? "text-pink-500" : "text-white"
-                  }`}
+    item.href === router.pathname
+      ? "text-pink-500"
+      : router.pathname == "/about"
+      ? "text-black"
+      : "text-black dark:text-white"
+  } `}
                 >
                   {item.label}
                 </Link>
@@ -85,13 +90,13 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 w-full h-full bg-black flex flex-col items-center justify-center text-white z-50">
+        <div className="fixed inset-0 w-full h-full bg-black flex flex-col items-center justify-center text-black dark:text-white  z-50">
           <ul className="text-center space-y-6">
             {navLinks?.map((item) => (
               <li key={item.label} onClick={() => setIsMobileMenuOpen(false)}>
                 <Link
                   href={item.href}
-                  className="text-lg font-montserrat leading-normal"
+                  className="text-lg font-montserrat leading-normal text-black dark:text-white"
                 >
                   {item.label}
                 </Link>

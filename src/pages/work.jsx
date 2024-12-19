@@ -41,7 +41,7 @@ const posts = [
 
 const Work = () => {
   return (
-    <section style={{ paddingTop: 200 }} className="bg-black text-white py-20">
+    <section style={{ paddingTop: 200 }} className="bg-white dark:bg-black text-white py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold mb-12 text-center">Proof is in the pudding</h2>
         
@@ -51,7 +51,7 @@ const Work = () => {
               key={index}
               className={`p-4 rounded-lg shadow-lg ${
                 post.isFullWidth ? 'md:col-span-2 grid md:grid-cols-2 items-center' : ''
-              } bg-black text-black`}
+              } bg-white dark:bg-black text-black dark:text-black`}
             >
               {/* Full width post layout */}
               <img
@@ -62,8 +62,8 @@ const Work = () => {
                 }`}
               />
               <div className={`${post.isFullWidth ? 'px-6' : ''}`}>
-                <h3 className="text-2xl font-bold mb-4 text-white" >{post.title}</h3>
-                <p className="text-white mb-6">{post.description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-black dark:text-white" >{post.title}</h3>
+                <p className="text-black dark:text-white mb-6">{post.description}</p>
                 <a
                   href="#"
                   className="inline-block bg-pink-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-pink-600"
